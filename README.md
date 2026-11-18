@@ -24,6 +24,7 @@ My evaluation of FortyGuard's **Temperature API®**, **Temperature Dashboard®**
 | `fg_test.py` | Test harness for the REST API: submits a heatmap, polls with 404/429 handling, saves every request and response, and inspects saved results offline |
 | `lower_manhattan.geojson` | The test polygon (the docs' own example area), also uploaded to the dashboard |
 | `evidence/` | The request bodies and submit/error responses from my test runs |
+| [`screenshots/`](screenshots/README.md) | 42 annotated screenshots, one per finding, indexed by report section |
 
 Full result files, which contain FortyGuard's tile data, are left out of the repo on purpose, because that data belongs to FortyGuard. I'm happy to share them on request.
 

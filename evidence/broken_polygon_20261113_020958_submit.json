@@ -1,0 +1,9 @@
+{
+  "http_status": 400,
+  "body": {
+    "error": true,
+    "status_code": 400,
+    "message": "Polygon ring is not closed: the first and last positions must be identical.",
+    "field": "polygon_aoi.coordinates[0]"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "polygon_aoi": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -74.017,
+                40.7051
+              ],
+              [
+                -74.0031,
+                40.7051
+              ],
+              [
+                -74.0031,
+                40.718
+              ],
+              [
+                -74.017,
+                40.718
+              ],
+              [
+                -74.017,
+                40.7051
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "date_time": {
+    "start_date": "2024-07-15",
+    "start_time": "14:00",
+    "filter_type": 1
+  },
+  "granularity": 100
+}

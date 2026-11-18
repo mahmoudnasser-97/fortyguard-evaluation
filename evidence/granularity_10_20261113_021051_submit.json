@@ -1,0 +1,23 @@
+{
+  "http_status": 422,
+  "body": {
+    "error": true,
+    "status_code": 422,
+    "message": "Field 'granularity' is invalid: Input should be 20, 60, 80 or 100",
+    "field": "granularity",
+    "detail": [
+      {
+        "type": "literal_error",
+        "loc": [
+          "body",
+          "granularity"
+        ],
+        "msg": "Input should be 20, 60, 80 or 100",
+        "input": 10,
+        "ctx": {
+          "expected": "20, 60, 80 or 100"
+        }
+      }
+    ]
+  }
+}

@@ -423,4 +423,4 @@ I asked: *"What was the temperature in Lower Manhattan (Financial District) on J
 - My response-size projection is an estimate from indented JSON files.
 - Findings reflect the products as of 11–18 November 2026.
 
-The scripts, polygon and request/response evidence are in the accompanying GitHub repository.
+The scripts, polygon and request/response evidence are in the accompanying GitHub repository. Screenshots for each finding are indexed by section in [`screenshots/README.md`](screenshots/README.md).

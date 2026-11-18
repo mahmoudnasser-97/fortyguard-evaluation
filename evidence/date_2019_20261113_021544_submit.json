@@ -1,0 +1,10 @@
+{
+  "http_status": 400,
+  "body": {
+    "error": true,
+    "status_code": 400,
+    "message": "Field 'date_time.start_date' (2019-07-15) is before the earliest supported date (2021-01-01). This request date is not accepted; available data may start later or vary by source.",
+    "field": "date_time.start_date",
+    "code": "NO_COVERAGE"
+  }
+}

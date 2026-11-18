@@ -1,0 +1,37 @@
+{
+  "polygon_aoi": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -74.017,
+          40.7051
+        ],
+        [
+          -74.0031,
+          40.7051
+        ],
+        [
+          -74.0031,
+          40.718
+        ],
+        [
+          -74.017,
+          40.718
+        ],
+        [
+          -74.017,
+          40.7051
+        ]
+      ]
+    ]
+  },
+  "date_time": {
+    "start_date": "2024-07-15",
+    "start_time": "06:00",
+    "end_time": "18:00",
+    "filter_type": 2
+  },
+  "granularity": 100,
+  "analytic_type": "time_of_measure"
+}

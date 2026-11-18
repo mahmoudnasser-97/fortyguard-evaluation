@@ -1,0 +1,11 @@
+{
+  "http_status": 200,
+  "body": {
+    "error": false,
+    "status_code": 200,
+    "message": "Heatmap Submitted Successfully",
+    "data": {
+      "activity_id": "3eec0510-d64c-4427-918a-d57585c887bc"
+    }
+  }
+}
