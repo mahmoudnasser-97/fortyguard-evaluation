@@ -190,9 +190,36 @@ def show_saved(path):
                 print(f"{key}: {value}")
 
 
+def summarize(results_dir, out_dir):
+    """Write a stats-only summary of every *_final.json (no tile geometries). No API call, no credits."""
+    import glob
+    os.makedirs(out_dir, exist_ok=True)
+    for path in sorted(glob.glob(os.path.join(results_dir, "*_final.json"))):
+        with open(path, encoding="utf-8") as f:
+            final = json.load(f)
+        data = final.get("data") or {}
+        result = data.get("result") or {}
+        map_data = result.get("map_data") or {}
+        tiles = map_data.get("features") or []
+        summary = {
+            "source_file": os.path.basename(path),
+            "status": data.get("status"),
+            "tile_count": len(tiles),
+            "first_tile_properties": tiles[0].get("properties") if tiles else None,
+            "map_data_extra": {k: v for k, v in map_data.items() if k not in ("type", "features")},
+            "stats_data": result.get("stats_data"),
+        }
+        out = os.path.join(out_dir, os.path.basename(path).replace("_final.json", "_summary.json"))
+        save(out, summary)
+        print(f"wrote {out}  ({len(tiles)} tiles)")
+
+
 def main():
     if len(sys.argv) == 3 and sys.argv[1] == "--show":
         show_saved(sys.argv[2])
+        return
+    if len(sys.argv) == 4 and sys.argv[1] == "--summarize":
+        summarize(sys.argv[2], sys.argv[3])
         return
     if len(sys.argv) != 2 or sys.argv[1] == "--list":
         print("Available tests:", ", ".join(TESTS))

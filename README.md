@@ -41,6 +41,7 @@ export FORTYGUARD_API_KEY="your-key"
 python fg_test.py --list                 # show available tests
 python fg_test.py docs_single_hour       # run one test (paid tests cost 4,220 credits on Premium)
 python fg_test.py --show results/<file>_final.json   # inspect a saved result, no API call
+python fg_test.py --summarize results evidence       # write stats-only summaries (no tiles), no API call
 ```
 
 Tests that are rejected by validation (`outside_us`, `broken_polygon`, `granularity_10`, `date_2018` to `date_2020`) are never charged.
