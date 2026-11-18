@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Lower Manhattan (FortyGuard docs example area)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-74.0170, 40.7051],
+          [-74.0031, 40.7051],
+          [-74.0031, 40.7180],
+          [-74.0170, 40.7180],
+          [-74.0170, 40.7051]
+        ]]
+      }
+    }
+  ]
+}

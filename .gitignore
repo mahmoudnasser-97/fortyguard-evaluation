@@ -1,0 +1,11 @@
+# Secrets
+.env
+*.key
+
+# Full API results (FortyGuard tile data, large)
+results/
+*_final.json
+
+# Python
+__pycache__/
+*.pyc
